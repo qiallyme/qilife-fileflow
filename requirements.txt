@@ -1,0 +1,22 @@
+# Required
+watchdog
+python-dotenv
+pytesseract
+Pillow
+openai
+
+# Optional OCR/Image/AI Utilities
+opencv-python      # For future image preprocessing
+tqdm               # For batch progress bars
+rich               # For beautiful CLI output
+streamlit          # For optional GUI
+filetype           # Detect file types without extensions
+python-magic       # Alternative to filetype (Linux-based)
+
+# Logging/Debug
+loguru             # Better logging
+
+# PDF/Docs (Future: extract text from PDFs, Word, etc.)
+pdfminer.six
+python-docx
+PyMuPDF
