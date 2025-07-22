@@ -20,3 +20,5 @@ loguru             # Better logging
 pdfminer.six
 python-docx
 PyMuPDF
+pdfminer.six
+filetype

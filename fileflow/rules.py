@@ -1,10 +1,16 @@
+# fileflow/rules.py
+
 def get_naming_prompt():
     return """
-1. Use lowercase and underscores for spaces.
-2. Avoid special characters (no !, @, #, $, %, etc).
-3. Max 5-7 words if possible, skip filler like 'the', 'a'.
-4. Use meaningful keywords: names, topics, categories.
-5. If nothing useful in OCR, use 'untitled'.
-6. Do NOT include file extension in output.
-7. Assume files could be images, PDFs, docs, or notes.
+Use this format:
+[entity]_[type or document kind]_[reference or number]_[main date]_[optional date or tag]
+
+Guidelines:
+1. DO NOT start with the date.
+2. Entity or subject (e.g., IRS, Chase, Amazon) comes first.
+3. Type should describe what the file is (invoice, statement, log, report, etc.)
+4. Use underscores between words.
+5. Avoid generic words like 'file', 'document', 'scan'.
+6. Keep it 5–7 tokens max when possible.
+7. Respond with only the filename, no extension, no explanation.
 """
