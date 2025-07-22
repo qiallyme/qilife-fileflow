@@ -3,7 +3,7 @@ watchdog
 python-dotenv
 pytesseract
 Pillow
-openai
+openai>=1.0.0
 
 # Optional OCR/Image/AI Utilities
 opencv-python      # For future image preprocessing
