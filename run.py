@@ -1,4 +1,7 @@
 # run.py
+from dotenv import load_dotenv
+load_dotenv()
+
 from fileflow.core import run
 from fileflow.mover import undo_last_move
 

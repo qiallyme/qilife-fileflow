@@ -43,5 +43,5 @@ Rules:
         print(f"⚠️ GPT fallback due to error: {e}")
         text = metadata.get("text", "").strip().replace("\n", " ").replace("  ", " ")
         snippet = "_".join(text.split()[:5]) or "untitled"
-        return f"{base}_{snippet}{ext}"
+        return f"{suggestion}{ext}"  # ✅ GPT controls the full filename
 
